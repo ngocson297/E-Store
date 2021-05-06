@@ -280,15 +280,47 @@ h4 {
     flex-basis:  30%;
 }
 
+.footer-col-1 h3 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-col-1 p {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} 
+
+.app-logo {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} 
+
 .footer-col-2 {
     flex: 1;
     text-align: center; 
+    flex-direction: column;
+}
+
+.footer-col-2 p {
+    flex-direction: column;
+    display: block;
+    justify-content: center;
+}
+
+.footer-col-2 b {
+    flex-direction: column;
+    display: block;
+    justify-content: center;
 }
 
 .footer-col-2 img {
     width: 180px;
     margin-bottom: 20px;
 }
+
 
 .footer-col-3, .footer-col-4 {
     flex-basis: 12%;
@@ -297,6 +329,7 @@ h4 {
 
 .footer-col-2, .footer-col-3, .footer-col-4:hover {
     cursor: pointer;
+    
 }
 
 ul {
