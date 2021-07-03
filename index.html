@@ -12,26 +12,35 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="shortcut icon" type="image/png" href="/images/son.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     
 </head>
 <body>
     <div class="container">
         <div class="navbar">
             <div class="logo">
-                <img src="images/lgo.png" alt="125px">
+              <a href="index.html"></a>
+                <img src="images/logo.png" alt="125px">
             </div>
             <nav>
                 <ul id="MenuItems">
-                    <li  class="footer-info" ><a href="">Trang chủ</a></li  class="footer-info" >
-                    <li  class="footer-info" ><a href="">Sản phẩm</a></li  class="footer-info">
-                    <li  class="footer-info" ><a href="">Chi tiết</a></li  class="footer-info">
-                    <li  class="footer-info" ><a href="">Liên hệ</a></li  class="footer-info" >
-                    <li  class="footer-info" ><a href="">Tài khoản</a></li  class="footer-info" >
+                    <li ><a href="">Trang chủ</a></li >
+                    <li ><a href="products.html">Sản phẩm</a></li>
+                    <li ><a href="">Chi tiết</a></li>
+                    <li ><a href="">Liên hệ</a></li >
+                    <li ><a href="">Tài khoản</a></li >
                 </ul>
             </nav>
             <img src="images/cart.png" width="30px" height="30px" alt="" class="cart">
             <img src="images/menu.png" class="menu-icon" onclick="menutoogle()" alt="">
+            <input type="text" placeholder="Tìm sản phẩm...">
+            <button type="submit" class="btn">
+              <i class="fas fa-search"></i>
+            </button>
         </div>
+       
     </div>
 
       <div id="slideshow">
@@ -64,48 +73,45 @@
           <h2 class="title">Sản phẩm nổi bật</h2>
           <div class="row">
             <div class="col-4">
-              <img src="/images/tainghe.jpg" alt="">
-              <h4>Airpod Pro</h4>
-              <div class="rating">
-                <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-                <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-                <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-                <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-              </div>
-              <p>$50.00</p>
-            </div>
-              <div class="col-4">
+              <a href="products-detail.html" style="text-decoration: none;">
                 <img src="/images/tainghe.jpg" alt="">
                 <h4>Airpod Pro</h4>
                 <div class="rating">
-                  <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-                  <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-                  <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-                  <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
                 </div>
                 <p>$50.00</p>
-              </div>
-            <div class="col-4">
-              <img src="/images/tainghe.jpg" alt="">
-              <h4>Airpod Pro</h4>
-              <div class="rating">
-                <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-                <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-                <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-                <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-              </div>
-              <p>$50.00</p>
+              </a>
             </div>
+  
             <div class="col-4">
-              <img src="/images/tainghe.jpg" alt="">
-              <h4>Airpod Pro</h4>
-              <div class="rating">
-                <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-                <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-                <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-                <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-              </div>
-              <p>$50.00</p>
+              <a href="products-detail.html" style="text-decoration: none;">
+                <img src="/images/tainghe.jpg" alt="">
+                <h4>Airpod Pro</h4>
+                <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <p>$50.00</p>
+              </a>
+            </div>
+  
+            <div class="col-4">
+              <a href="products-detail.html" style="text-decoration: none;">
+                <img src="/images/tainghe.jpg" alt="">
+                <h4>Airpod Pro</h4>
+                <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <p>$50.00</p>
+              </a>
             </div>
           </div>
 
@@ -113,99 +119,115 @@
           <h2 class="title">Sản phẩm mới nhất</h2>
           <div class="row">
             <div class="col-4">
+              <a href="products-detail.html" style="text-decoration: none;">
                 <img src="/images/tainghe.jpg" alt="">
                 <h4>Airpod Pro</h4>
                 <div class="rating">
-                  <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-                  <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-                  <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-                  <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
                 </div>
                 <p>$50.00</p>
+              </a>
             </div>
             <div class="col-4">
+              <a href="products-detail.html" style="text-decoration: none;">
                 <img src="/images/tainghe.jpg" alt="">
                 <h4>Airpod Pro</h4>
                 <div class="rating">
-                  <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-                  <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-                  <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-                  <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
                 </div>
                 <p>$50.00</p>
+              </a>
             </div>
             <div class="col-4">
-              <img src="/images/tainghe.jpg" alt="">
-              <h4>Airpod Pro</h4>
-              <div class="rating">
-                <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-                <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-                <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-                <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-              </div>
-              <p>$50.00</p>
+              <a href="products-detail.html" style="text-decoration: none;">
+                <img src="/images/tainghe.jpg" alt="">
+                <h4>Airpod Pro</h4>
+                <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <p>$50.00</p>
+              </a>
             </div>
 
             <div class="col-4">
-              <img src="/images/tainghe.jpg" alt="">
-              <h4>Airpod Pro</h4>
-              <div class="rating">
-                <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-                <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-                <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-                <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-              </div>
-              <p>$50.00</p>
+              <a href="products-detail.html" style="text-decoration: none;">
+                <img src="/images/tainghe.jpg" alt="">
+                <h4>Airpod Pro</h4>
+                <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <p>$50.00</p>
+              </a>
             </div>
         </div>
 
         <div class="row">
           <div class="col-4">
-            <img src="/images/tainghe.jpg" alt="">
-            <h4>Airpod Pro</h4>
-            <div class="rating">
-              <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-              <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-              <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-              <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-            </div>
-            <p>$50.00</p>
+            <a href="products-detail.html" style="text-decoration: none;">
+              <img src="/images/tainghe.jpg" alt="">
+              <h4>Airpod Pro</h4>
+              <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+              <p>$50.00</p>
+            </a>
           </div>
 
           <div class="col-4">
-            <img src="/images/tainghe.jpg" alt="">
-            <h4>Airpod Pro</h4>
-            <div class="rating">
-              <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-              <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-              <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-              <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-            </div>
-            <p>$50.00</p>
+            <a href="products-detail.html" style="text-decoration: none;">
+              <img src="/images/tainghe.jpg" alt="">
+              <h4>Airpod Pro</h4>
+              <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+              <p>$50.00</p>
+            </a>
           </div>
 
           <div class="col-4">
-            <img src="/images/tainghe.jpg" alt="">
-            <h4>Airpod Pro</h4>
-            <div class="rating">
-              <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-              <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-              <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-              <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-            </div>
-            <p>$50.00</p>
+            <a href="products-detail.html" style="text-decoration: none;">
+              <img src="/images/tainghe.jpg" alt="">
+              <h4>Airpod Pro</h4>
+              <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+              <p>$50.00</p>
+            </a>
           </div>
 
           <div class="col-4">
-            <img src="/images/tainghe.jpg" alt="">
-            <h4>Airpod Pro</h4>
-            <div class="rating">
-              <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-              <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-              <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-              <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-            </div>
-            <p>$50.00</p>
+            <a href="products-detail.html" style="text-decoration: none;">
+              <img src="/images/tainghe.jpg" alt="">
+              <h4>Airpod Pro</h4>
+              <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+              <p>$50.00</p>
+            </a>
           </div>
         </div>
       </div>
@@ -232,7 +254,7 @@
               </div>
           </div>
       </div>
-      <button class="button_scroll2top"><i class="fas fa-arrow-up"></i  class="footer-info"></button>
+      <button class="button_scroll2top"><i class="fas fa-arrow-up"></i></button>
       <script type="text/javascript">
        const button_scroll2top = document.querySelector(".button_scroll2top");
         button_scroll2top.addEventListener("click", function() {
@@ -245,7 +267,19 @@
             )
             $("html,body").animate({ scrollTop: 0}, "slow");
         });
-      </script>
+        </script>
+      <button class="button_chat" onclick="openForm()"><i class="fab fa-facebook-messenger"></i></button>
+      <div class="chat-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h3>Tư vấn cho bạn</h3>
+      
+          <label for="msg"><b>Message</b></label>
+          <textarea placeholder="Type message.." name="msg" required></textarea>
+      
+          <button type="submit" class="btn">Send</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
 
       <div class="footer">
         <div class="container">
@@ -276,19 +310,19 @@
             <div class="footer-col-3">
               <h3>Chính sách</h3>
               <ul>
-                <li class="footer-info" >Chính sách bảo hành</li>
-                <li class="footer-info" >Chính sách giao hàng</li>
-                <li class="footer-info" >Chính sách đổi trả hàng</li>
-                <li class="footer-info" >Chính sách bảo mật</li>
+                <l >Chính sách bảo hành</l>
+                <l >Chính sách giao hàng</l>
+                <l >Chính sách đổi trả hàng</l>
+                <l >Chính sách bảo mật</l>
               </ul>
             </div>
             <div class="footer-col-4">
               <h3>Thông tin</h3>
               <ul>
-                <li class="footer-info" >Facebook</li>
-                <li class="footer-info" >Twitter</li>
-                <li class="footer-info" >Instagram</li>
-                <li class="footer-info" >Youtube</li>
+                <l >Facebook</l>
+                <l >Twitter</l>
+                <l >Instagram</l>
+                <l >Youtube</l>
               </ul>
             </div>
           </div>
@@ -310,6 +344,15 @@
             MenuItems.style.maxHeight = "0px";
           }
         }
+
+        //popup chat
+        function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+} 
       </script>
 </body>
 </html>
