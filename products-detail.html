@@ -32,53 +32,55 @@
                     <li  class="footer-info" ><a href="">Tài khoản</a></li  class="footer-info" >
                 </ul>
             </nav>
-            <img src="images/cart.png" width="30px" height="30px" alt="" class="cart">
+            <a href="cart.html">
+              <img src="images/cart.png" width="30px" height="30px" alt="" class="cart">
+            </a>
             <img src="images/menu.png" class="menu-icon" onclick="menutoogle()" alt="">
         </div>
     </div>
-
-<!-- single products detail -->
-    <div class="small-cotainer single-product">
-        <div class="row">
-            <div class="col-2">
-                <img src="images/tainghe.jpg" alt="" width="100%" id="ProductImg">
-
-                <div class="small-img-row">
-                    <div class="small-img-col">
-                        <img src="images/tainghe.jpg" alt="" width="100%" class="small-img" > 
-                    </div>
-                    <div class="small-img-col">
-                        <img src="images/buys-1.jpg" alt="" width="100%" class="small-img" >
-                    </div>
-                    <div class="small-img-col">
-                        <img src="images/buys-2.png" alt="" width="100%" class="small-img" >
-                    </div>
-                    <div class="small-img-col">
-                        <img src="images/buys-3.jpg" alt="" width="100%" class="small-img" >
+    <!-- single products detail -->
+        <div class="small-cotainer single-product">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/tainghe.jpg" alt="" width="100%" id="ProductImg">
+    
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="images/tainghe.jpg" alt="" width="100%" class="small-img" > 
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/buys-1.jpg" alt="" width="100%" class="small-img" >
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/buys-2.png" alt="" width="100%" class="small-img" >
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/buys-3.jpg" alt="" width="100%" class="small-img" >
+                        </div>
                     </div>
                 </div>
+                <div class="col-2">
+                    <p>Home / Airpod pro</p>
+                    <h1>Airpod Pro by Son</h1>
+                    <h4>$200.00</h4>
+                    <select>
+                        <option>Đen</option>
+                        <option>Đỏ</option>
+                        <option>Trắng</option>
+                        <option>Hồng</option>
+                        <option>Xanh dương</option>
+                    </select>
+                    <input type="number" name="" id="">
+                    <a href="" class="btn">Add to Cart</a>
+                    <br>
+                    <h3>Mô tả sản phẩm<i class="fa fa-indent"></i></h3>
+                    <p>Thiết kế nhỏ gọn, dễ dàng đem theo bất cứ đâu
+                        AirPods Pro với thiết kế gọn gàng, đẹp và tinh tế, tai nghe được thiết kế theo dạng In-ear thay vì Earbuds như AirPods 2, cho phép chống ồn tốt hơn, khó rớt khi đeo và êm tai hơn.</p>
+                </div>
+    
             </div>
-            <div class="col-2">
-                <p>Home / Airpod pro</p>
-                <h1>Airpod Pro by Son</h1>
-                <h4>$200.00</h4>
-                <select>
-                    <option>Đen</option>
-                    <option>Đỏ</option>
-                    <option>Trắng</option>
-                    <option>Hồng</option>
-                    <option>Xanh dương</option>
-                </select>
-                <input type="number" name="" id="">
-                <a href="" class="btn">Add to Cart</a>
-                <br>
-                <h3>Mô tả sản phẩm<i class="fa fa-indent"></i></h3>
-                <p>Thiết kế nhỏ gọn, dễ dàng đem theo bất cứ đâu
-                    AirPods Pro với thiết kế gọn gàng, đẹp và tinh tế, tai nghe được thiết kế theo dạng In-ear thay vì Earbuds như AirPods 2, cho phép chống ồn tốt hơn, khó rớt khi đeo và êm tai hơn.</p>
-            </div>
-
         </div>
-    </div>
+
 
     <div class="small-container">
         <div class="row row-2">
@@ -154,11 +156,11 @@
                 </p>
                 <p class="company_phone">
                   <b>SĐT:</b>
-                  "0978391141"
+                  "0978123456"
                 </p>
                 <p class="company_email">
                   <b>Email:</b>
-                  Liên hệ các vấn đề và đặt hàng online: sonnguyenngoc2036@gmail.com
+                  Liên hệ các vấn đề và đặt hàng online: aloalo@gmail.com
                 </p>
                 </div>
                 <div class="footer-col-3">
@@ -186,6 +188,18 @@
           </div>
      
       <button class="button_scroll2top"><i class="fas fa-arrow-up"></i  class="footer-info"></button>
+        <button class="button_chat" onclick="openForm()"><i class="fab fa-facebook-messenger"></i></button>
+        <div class="chat-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+            <h3>Tư vấn cho bạn</h3>
+        
+            <label for="msg"><b>Message</b></label>
+            <textarea placeholder="Type message.." name="msg" required></textarea>
+        
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div>
       <script type="text/javascript">
        const button_scroll2top = document.querySelector(".button_scroll2top");
         button_scroll2top.addEventListener("click", function() {
@@ -226,6 +240,15 @@
           SmallImg[3].onclick = function() {
               productImg.src = SmallImg[3].src;
           }
+
+                 //popup chat
+        function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+} 
       </script>
 </body>
 </html>
