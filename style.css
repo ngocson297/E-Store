@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 ::-webkit-scrollbar {
@@ -29,12 +30,15 @@ body {
 }
 
 .logo img {
-    width: 200px;
+    width: 100px;
 }
 .navbar {
     display: flex;
     align-items: center;
-    padding: 20px;
+    /* padding: 20px; */
+    background-color: #005FA3;
+    height: 60px;
+    
 }
 
 .navbar input {
@@ -48,6 +52,7 @@ nav {
     /* background: #005FA3;
     border-radius: 4px;
     padding: 8px; */
+   
 }
 
 nav ul {
@@ -62,12 +67,12 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #555;
+    color: rgb(255, 255, 255);
 }
 
 #MenuItems li a:hover {
     text-decoration: none;  
-    color: #005FA3;
+    color: #000000;
     transform: scale(1.5);
 }
 
