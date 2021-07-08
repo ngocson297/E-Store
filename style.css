@@ -20,6 +20,13 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+.container {
+    max-width: 960px;
+}
+
+.card-inner{
+    margin-left: 4rem;
+}
 
 .logo img {
     width: 200px;
@@ -38,6 +45,9 @@ body {
 nav { 
     flex: 1;
     text-align: right;
+    /* background: #005FA3;
+    border-radius: 4px;
+    padding: 8px; */
 }
 
 nav ul {
@@ -82,10 +92,13 @@ p {
 }
 
 .row {
-    display:flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display:flex !important; 
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    margin-right: 15px !important;
+    margin-left: 15px !important;
+    padding-bottom: 20px;
+    /* justify-content: space-around; */
 }
 
 .col-2 {
@@ -177,7 +190,7 @@ p {
 }
 
 .title {
-    text-align: center;
+    /* text-align: center; */
     margin: 0 auto;
     position: relative;
     line-height: 60px;
@@ -192,7 +205,7 @@ p {
     border-radius: 5px;
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 10%;
     transform: translateX(-50%);
 }
 
@@ -254,6 +267,7 @@ h4 {
     border: none;
     outline: none;
 }
+
 
 .button_chat {
     position: fixed;
@@ -323,6 +337,10 @@ h4 {
     align-items: center;
     text-align: center;
 } 
+
+.app-logo img {
+    margin-bottom: 5px;
+}
 
 .footer-col-2 {
     flex: 1;
@@ -494,6 +512,34 @@ ul li {
     padding: 8px;
 }
 
+.btn-checkout {
+    border: 1px solid #005FA3;
+    cursor: pointer;
+    background: #005FA3;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 7px;
+    padding: 8px;
+    display: flex;
+    padding: 10px;
+    justify-content: flex-end;
+    float: right;
+}
+
+.btn-checkout:hover {
+    background: #367EB7;
+}
+
+.btn-checkout a {
+    color: #fff;
+}
+
+.btn-checkout a:hover {
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
 .btn:hover { 
     background: #a1cff0;  
 }
@@ -567,6 +613,10 @@ table {
     display: flex;
     padding: 10px;
     flex-wrap: wrap;
+}
+
+.cart-info .remove {
+    text-decoration: none;
 }
 
 th {
@@ -701,4 +751,53 @@ th:last-child {
   /* Add some hover effects to buttons */
   .form-container .btn:hover, .open-button:hover {
     opacity: 1;
+  }
+
+  /* review */
+
+  body {
+    padding-top: 70px;
+  }
+  .btn-grey{
+      background-color:#D8D8D8;
+      color:#FFF;
+  }
+  .rating-block{
+      background-color:#FAFAFA;
+      border:1px solid #EFEFEF;
+      padding:15px 15px 20px 15px;
+      border-radius:3px;
+  }
+  .bold{
+      font-weight:700;
+  }
+  .padding-bottom-7{
+      padding-bottom:7px;
+  }
+  
+  .review-block{
+      background-color:#FAFAFA;
+      border:1px solid #EFEFEF;
+      padding:15px;
+      border-radius:3px;
+      margin-bottom:15px;
+  }
+  .review-block-name{
+      font-size:12px;
+      margin:10px 0;
+  }
+  .review-block-date{
+      font-size:12px;
+  }
+  .review-block-rate{
+      font-size:13px;
+      margin-bottom:15px;
+  }
+  .review-block-title{
+      font-size:15px;
+      font-weight:700;
+      margin-bottom:10px;
+  }
+  .review-block-description{
+      font-size:13px;
   }

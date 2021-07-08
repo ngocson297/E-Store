@@ -35,84 +35,95 @@
             <img src="images/cart.png" width="30px" height="30px" alt="" class="cart">
             <img src="images/menu.png" class="menu-icon" onclick="menutoogle()" alt="">
         </div>
-        <div class="small-catainer cart-page">
-            <table>
-                <tr>
-                    <th>Product</th>
-                    <th>Quantity</th>
-                    <th>Subtotal</th>
-                </tr>
-                <tr>
-                    <td>               
-                        <div class="cart-info">
-                            <img src="./images/tainghe.jpg" alt="">
-                            <div class="">
-                                <p>Ipod Pro</p>
-                                <small>Price: 50$</small>
-                                <br>
-                                <a class="remove" href="">Remove</a>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 order-md-1">
+                    <h4 class="mb-3" style="font-size: 29px; font-weight: bold;">Thông tin hoá đơn</h4>
+                    <form class="needs-validation" novalidate="">
+        
+                       <div class="mb-3">
+                            <label for="email">Họ và tên <span class="text-muted"></span></label>
+                            <input type="email" class="form-control" id="email" placeholder="Nhập họ và tên">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email">Số điện thoại</label>
+                            <input type="email" class="form-control" id="email" placeholder="Nhập số điện thoại">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email">Email <span class="text-muted">(Optional)</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="Nhập địa chỉ email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="address">Địa chỉ</label>
+                            <input type="text" class="form-control" id="address" placeholder="Nhập địa chỉ giao hàng" required="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="address2">Ghi chú <span class="text-muted">(Optional)</span></label>
+                            <input type="text" class="form-control" id="address2" placeholder="Nhập thông tin ghi chú đơn hàng">
+                        </div>
+          
+                        <hr class="mb-4">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="save-info">
+                            <label class="custom-control-label" for="save-info">Lưu thông tin này cho lần thanh toán tiếp theo</label>
+                        </div>
+                        <hr class="mb-4">
+                        <h4 class="mb-3">Phương thức thanh toán</h4>
+                        <div class="d-block my-3">
+                            <div class="custom-control custom-radio">
+                                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+                                <label class="custom-control-label" for="credit">MoMo</label>
+                                <img src="./images/logo-momo.jpg"> 
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+                                <label class="custom-control-label" for="credit">AirPay</label>
+                                <img src="./images/airp.jpg"> 
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+                                <label class="custom-control-label" for="credit">Credit card</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                                <label class="custom-control-label" for="debit">Debit card</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                                <label class="custom-control-label" for="paypal">PayPal</label>
                             </div>
                         </div>
-                </td>
-                    <td><input type="number" value="1" name=""></td>
-                    <td>50$</td>
-                </tr>
-    
-                <tr>
-                    <td>               
-                        <div class="cart-info">
-                            <img src="./images/tainghe.jpg" alt="">
-                            <div class="">
-                                <p>Ipod Pro</p>
-                                <small>Price: 50$</small>
-                                <br>
-                                <a class="remove" href="">Remove</a>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="cc-name">Tên trên card</label>
+                                <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="cc-number">Số thẻ</label>
+                                <input type="text" class="form-control" id="cc-number" placeholder="" required="">         
                             </div>
                         </div>
-                </td>
-                    <td><input type="number" value="1" name=""></td>
-                    <td>50$</td>
-                </tr>
-    
-                <tr>
-                    <td>               
-                        <div class="cart-info">
-                            <img src="./images/tainghe.jpg" alt="">
-                            <div class="">
-                                <p>Ipod Pro</p>
-                                <small>Price: 50$</small>
-                                <br>
-                                <a  class="remove" href="">Remove</a>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="cc-expiration">Ngày hết hạn</label>
+                                <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="cc-cvv">CVV</label>
+                                <input type="text" class="form-control" id="cc-cvv" placeholder="Mã bảo mật" required="">
                             </div>
                         </div>
-                </td>
-                    <td><input type="number" value="1" name=""></td>
-                    <td>50$</td>
-                </tr>
-            </table>
-            <div class="total-price">
-                <table>
-                    <tr>
-                        <td>Subtotal</td>
-                        <td>100$</td>
-                    </tr>
-                    <tr>
-                        <td>Tax</td>
-                        <td>20$</td>
-                    </tr>
-                    <tr>
-                        <td>Total</td>
-                        <td>120$</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="btn-checkout" >
-                <a href="checkout.html">Check out</a>
+                        <hr class="mb-4">
+                        <button class="btn btn-primary btn-lg btn-block" type="submit">Thanh toán</button>
+                    </form>
+                </div>
             </div>
         </div>
+      
     </div>
-
-
 
     <!-- carrt item details -->
 
