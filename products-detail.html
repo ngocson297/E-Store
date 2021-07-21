@@ -1,147 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XStore</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"> -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-    <link rel="shortcut icon" type="image/png" href="/images/son.ico">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XStore</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"> -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap"
+    rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+  <link rel="shortcut icon" type="image/png" href="/images/son.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
 </head>
+
 <body>
+ 
+  <header>
+
+    <div class="navbar">
+        <div class="logo">
+          <a href="index.html"></a>
+            <img src="images/logo.png" alt="125px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li ><a href="index.html">Trang chủ</a></li >
+                <li ><a href="products.html">Sản phẩm</a></li>
+                <li ><a href="products-detail.html">Chi tiết</a></li>
+                <li ><a href="">Liên hệ</a></li >
+                <li ><a href="">Tài khoản</a></li >
+            </ul>
+        </nav>
+        <a href="cart.html">
+          <img src="images/cart.png" width="30px" height="30px" alt="" class="cart">
+        </a>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoogle()" alt="">
+        <input type="text" placeholder="Tìm sản phẩm...">
+        <button type="submit" class="btn">
+          <i class="fas fa-search"></i>
+        </button>
+    </div>
     <div class="container">
-        <div class="navbar">
-            <div class="logo">
-              <a href="index.html">
-                <img src="images/logo.png" alt="125px">
-              </a>
-            </div>
-            <nav>
-                <ul id="MenuItems">
-                    <li  class="footer-info" ><a href="index.html">Trang chủ</a></li  class="footer-info" >
-                    <li  class="footer-info" ><a href="products.html">Sản phẩm</a></li  class="footer-info">
-                    <li  class="footer-info" ><a href="products-detail.html">Chi tiết</a></li  class="footer-info">
-                    <li  class="footer-info" ><a href="">Liên hệ</a></li  class="footer-info" >
-                    <li  class="footer-info" ><a href="">Tài khoản</a></li  class="footer-info" >
-                </ul>
-            </nav>
-            <a href="cart.html">
-              <img src="images/cart.png" width="30px" height="30px" alt="" class="cart">
-            </a>
-            <img src="images/menu.png" class="menu-icon" onclick="menutoogle()" alt="">
-        </div>
+       
     </div>
-    <!-- single products detail -->
-        <div class="small-cotainer single-product">
-            <div class="row">
-                <div class="col-2">
-                    <img src="images/tainghe.jpg" alt="" width="100%" id="ProductImg">
-    
-                    <div class="small-img-row">
-                        <div class="small-img-col">
-                            <img src="images/tainghe.jpg" alt="" width="100%" class="small-img" > 
-                        </div>
-                        <div class="small-img-col">
-                            <img src="images/buys-1.jpg" alt="" width="100%" class="small-img" >
-                        </div>
-                        <div class="small-img-col">
-                            <img src="images/buys-2.png" alt="" width="100%" class="small-img" >
-                        </div>
-                        <div class="small-img-col">
-                            <img src="images/buys-3.jpg" alt="" width="100%" class="small-img" >
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <p>Home / Airpod pro</p>
-                    <h1>Airpod Pro by Son</h1>
-                    <h4>$200.00</h4>
-                    <select>
-                        <option>Đen</option>
-                        <option>Đỏ</option>
-                        <option>Trắng</option>
-                        <option>Hồng</option>
-                        <option>Xanh dương</option>
-                    </select>
-                    <input type="number" name="" id="">
-                    <a href="" class="btn">Add to Cart</a>
-                    <br>
-                    <h3>Mô tả sản phẩm<i class="fa fa-indent"></i></h3>
-                    <p>Thiết kế nhỏ gọn, dễ dàng đem theo bất cứ đâu
-                        AirPods Pro với thiết kế gọn gàng, đẹp và tinh tế, tai nghe được thiết kế theo dạng In-ear thay vì Earbuds như AirPods 2, cho phép chống ồn tốt hơn, khó rớt khi đeo và êm tai hơn.</p>
-                </div>
-    
-            </div>
-        </div>
+  </header>
+  <!-- single products detail -->
+  <div class="small-cotainer single-product">
+    <div class="row">
+      <div class="col-2">
+        <img src="images/banphim.jpg" alt="" width="100%" id="ProductImg">
 
-
-    <div class="small-container">
-        <div class="row row-2">
-            <h2>Related Products</h2>
-            <p>View more</p>
+        <div class="small-img-row">
+          <div class="small-img-col">
+            <img src="images/bp1.jpg" alt="" width="100%" class="small-img">
+          </div>
+          <div class="small-img-col">
+            <img src="images/bp2.jpg" alt="" width="100%" class="small-img">
+          </div>
+          <div class="small-img-col">
+            <img src="images/bp4.jpg" alt="" width="100%" class="small-img">
+          </div>
+          <div class="small-img-col">
+            <img src="images/bp3.jpg" alt="" width="100%" class="small-img">
+          </div>
         </div>
+      </div>
+      <div class="col-2">
+        <!-- <p>Home / Sản phẩm</p> -->
+        <a href="index.html" style="color: #333;">Home</a>
+        <span>/Sản phẩm</span>
+        <h1>Bàn phím cơ Gaming DAREU EK87 - Black (Multi-LED)</h1>
+        <h4>499.000 VNĐ</h4>
+        <select>
+          <option>Đen</option>
+          <option>Đỏ</option>
+          <option>Trắng</option>
+          <option>Hồng</option>
+          <option>Xanh dương</option>
+        </select>
+        <input type="number" name="" id="">
+        <a href="" class="btn">Add to Cart</a>
+        <br>
+        <h3>Mô tả sản phẩm<i class="fa fa-indent"></i></h3>
+        <p>DAREU EK87 - Black (Multi-LED) là chiếc bàn phím cơ giá rẻ dạng tenkeyless (nhỏ gọn, lược bỏ dãy phím số bên
+          phải). Đây là thiết kế rất thân thiện với game thủ, những người không có nhu cầu sử dụng dãy phím số bên phải,
+          đặc biệt thích hợp cho việc mang theo mình đi thi đấu hoặc chơi cùng bạn bè ở các cyber game.</p>
+      </div>
+
     </div>
-<!-- featured products -->
-      <div class="small-container">
-          <div class="row">
-            <div class="col-4">
-              <img src="/images/tainghe.jpg" alt="">
-              <h4>Airpod Pro</h4>
-              <div class="rating">
-                <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-                <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-                <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-                <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-              </div>
-              <p>$50.00</p>
-            </div>
-              <div class="col-4">
-                <img src="/images/tainghe.jpg" alt="">
-                <h4>Airpod Pro</h4>
-                <div class="rating">
-                  <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-                  <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-                  <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-                  <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-                </div>
-                <p>$50.00</p>
-              </div>
-            <div class="col-4">
-              <img src="/images/tainghe.jpg" alt="">
-              <h4>Airpod Pro</h4>
-              <div class="rating">
-                <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-                <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-                <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-                <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-              </div>
-              <p>$50.00</p>
-            </div>
-            <div class="col-4">
-              <img src="/images/tainghe.jpg" alt="">
-              <h4>Airpod Pro</h4>
-              <div class="rating">
-                <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-                <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-                <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-                <i class="fa fa-star" aria-hidden="true"></i  class="footer-info">
-              </div>
-              <p>$50.00</p>
-            </div>
-          </div>
-          </div>
+  </div>
 
-      <div class="container">
-        <h2 class="text-center">Đánh giá sản phẩm</h2>
-        
-        <!-- <div class="card">
+
+
+
+  <div class="container">
+    <h2 class="text-center">Đánh giá sản phẩm</h2>
+
+    <!-- <div class="card">
             <div class="card-body">
                 <div class="row">
                     <div class="col-md-2">
@@ -168,339 +130,417 @@
           
             </div>
         </div> -->
-        <div class="container">			
-          <div class="row">
-            <div class="col-sm-3">
-              <div class="rating-block">
-                <h4>Đánh giá trung bình</h4>
-                <h2 class="bold padding-bottom-7">4.3 <small>/ 5</small></h2>
-                <button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
-                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                </button>
-                <button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
-                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                </button>
-                <button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
-                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                </button>
-                <button type="button" class="btn btn-default btn-grey btn-sm" aria-label="Left Align">
-                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                </button>
-                <button type="button" class="btn btn-default btn-grey btn-sm" aria-label="Left Align">
-                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                </button>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <h4>Xếp hạng đánh giá</h4>
-              <div class="pull-left">
-                <div class="pull-left" style="width:35px; line-height:1;">
-                  <div style="height:9px; margin:5px 0;">5 <span class="glyphicon glyphicon-star"></span></div>
-                </div>
-                <div class="pull-left" style="width:180px;">
-                  <div class="progress" style="height:9px; margin:8px 0;">
-                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="5" style="width: 1000%">
-                    <span class="sr-only">80% Complete (danger)</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="pull-right" style="margin-left:10px;">1</div>
-              </div>
-              <div class="pull-left">
-                <div class="pull-left" style="width:35px; line-height:1;">
-                  <div style="height:9px; margin:5px 0;">4 <span class="glyphicon glyphicon-star"></span></div>
-                </div>
-                <div class="pull-left" style="width:180px;">
-                  <div class="progress" style="height:9px; margin:8px 0;">
-                    <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="4" aria-valuemin="0" aria-valuemax="5" style="width: 80%">
-                    <span class="sr-only">80% Complete (danger)</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="pull-right" style="margin-left:10px;">1</div>
-              </div>
-              <div class="pull-left">
-                <div class="pull-left" style="width:35px; line-height:1;">
-                  <div style="height:9px; margin:5px 0;">3 <span class="glyphicon glyphicon-star"></span></div>
-                </div>
-                <div class="pull-left" style="width:180px;">
-                  <div class="progress" style="height:9px; margin:8px 0;">
-                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="3" aria-valuemin="0" aria-valuemax="5" style="width: 60%">
-                    <span class="sr-only">80% Complete (danger)</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="pull-right" style="margin-left:10px;">0</div>
-              </div>
-              <div class="pull-left">
-                <div class="pull-left" style="width:35px; line-height:1;">
-                  <div style="height:9px; margin:5px 0;">2 <span class="glyphicon glyphicon-star"></span></div>
-                </div>
-                <div class="pull-left" style="width:180px;">
-                  <div class="progress" style="height:9px; margin:8px 0;">
-                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="5" style="width: 40%">
-                    <span class="sr-only">80% Complete (danger)</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="pull-right" style="margin-left:10px;">0</div>
-              </div>
-              <div class="pull-left">
-                <div class="pull-left" style="width:35px; line-height:1;">
-                  <div style="height:9px; margin:5px 0;">1 <span class="glyphicon glyphicon-star"></span></div>
-                </div>
-                <div class="pull-left" style="width:180px;">
-                  <div class="progress" style="height:9px; margin:8px 0;">
-                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="5" style="width: 20%">
-                    <span class="sr-only">80% Complete (danger)</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="pull-right" style="margin-left:10px;">0</div>
-                
-              </div>
-           
-            </div>			
-        
-          </div>			
-          <div class="row">
-            <input type="Text" placeholder="Đánh giá..." style="width: 100%; height:100px; border-color: #005FA3;">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="rating-block">
+            <h4>Đánh giá trung bình</h4>
+            <h2 class="bold padding-bottom-7">4.3 <small>/ 5</small></h2>
+            <button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
+              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            </button>
+            <button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
+              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            </button>
+            <button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
+              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            </button>
+            <button type="button" class="btn btn-default btn-grey btn-sm" aria-label="Left Align">
+              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            </button>
+            <button type="button" class="btn btn-default btn-grey btn-sm" aria-label="Left Align">
+              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            </button>
           </div>
-          <div class="row">
-            <div class="col-sm-7">
-              <hr/>
-              <div class="review-block">
-                <div class="row">
-                  <div class="col-sm-3">
-                    <img src="./images/us1.jpeg" class="img-rounded">
-                    <span style="color: green">&#9745;</span>
-                    <div class="review-block-name"><a href="#">Nguyen Van A</a></div>
-                    <div class="review-block-date">July 09, 2021<br/>1 day ago</div>
-                  </div>
-                  <div class="col-sm-9">
-                    <div class="review-block-rate">
-                      <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                      </button>
-                      <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                      </button>
-                      <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                      </button>
-                      <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                      </button>
-                      <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                      </button>
-                    </div>
-                    <div class="review-block-title">Sản phẩm này rất tốt</div>
-                    <div class="review-block-description">Tôi đã mua sản phẩm này nhiều lần rồi, tôi thấy nó rất tốt, tôi sẽ ghé lại để tiếp tục mua sản phẩm này và những sản phẩm khác nữa. Cảm ơn.</div>
-                  </div>
-                </div>
-                <hr/>
-                <div class="row">
-                  <div class="col-sm-3">
-                    <img src="./images/us.png" class="img-rounded">
-                    <span style="color: green">&#9745;</span>
-                    <div class="review-block-name"><a href="#">Nguyen Thi B</a></div>
-                    <div class="review-block-date">July 09, 2021<br/>1 day ago</div>
-                  </div>
-                  <div class="col-sm-9">
-                    <div class="review-block-rate">
-                      <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                      </button>
-                      <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                      </button>
-                      <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                      </button>
-                      <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                      </button>
-                      <button type="button" class="btn btn-default btn-grey btn-xs" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                      </button>
-                    </div>
-                    <div class="review-block-title">Sản phẩm này rất tốt</div>
-                    <div class="review-block-description">Tôi đã mua sản phẩm này nhiều lần rồi, tôi thấy nó rất tốt, tôi sẽ ghé lại để tiếp tục mua sản phẩm này và những sản phẩm khác nữa. Cảm ơn.</div>
-                  </div>
-                </div>
-                <hr/>
-                <div class="row">
-                  <div class="col-sm-3">
-                    <img src="http://dummyimage.com/60x60/666/ffffff&text=No+Image" class="img-rounded" style="">
-                    <span style="color:red;">&#9888;</span>
-                    <div class="review-block-name"><a href="#">Anonymous</a></div>
-                    <div class="review-block-date">July 04, 2021<br/>5 day ago</div>
-                  </div>
-                  <div class="col-sm-9">
-                    <div class="review-block-rate">
-                      <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                      </button>
-                      <button type="button" class="btn btn-default btn-grey btn-xs" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                      </button>
-                      <button type="button" class="btn btn-default btn-grey btn-xs" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                      </button>
-                      <button type="button" class="btn btn-default btn-grey btn-xs" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                      </button>
-                      <button type="button" class="btn btn-default btn-grey btn-xs" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                      </button>
-                    </div>
-                    <div class="review-block-title">Đồ dỏm, sản phậm tệ, xấu, đừng mua shop này</div>
-                    <div class="review-block-description">ôi vừa mua sản phẩm đã bị hư, tôi sẽ không mua lần sau</div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-3">
-                    <img src="http://dummyimage.com/60x60/666/ffffff&text=No+Image" class="img-rounded" style="">
-                    <span style="color:red;">&#9888;</span>
-                    <div class="review-block-name"><a href="#">Anonymous</a></div>
-                    <div class="review-block-date">July 04, 2021<br/>5 day ago</div>
-                  </div>
-                  <div class="col-sm-9">
-                    <div class="review-block-rate">
-                      <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                      </button>
-                      <button type="button" class="btn btn-default btn-grey btn-xs" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                      </button>
-                      <button type="button" class="btn btn-default btn-grey btn-xs" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                      </button>
-                      <button type="button" class="btn btn-default btn-grey btn-xs" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                      </button>
-                      <button type="button" class="btn btn-default btn-grey btn-xs" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                      </button>
-                    </div>
-                    <div class="review-block-title">Sản phẩm xấu tệ, đừng mua</div>
-                    <div class="review-block-description">Tôi vừa mua sản phẩm đã bị hư, tôi sẽ không mua lần sau.</div>
-                  </div>
+        </div>
+        <div class="col-sm-3">
+          <h4>Xếp hạng đánh giá</h4>
+          <div class="pull-left">
+            <div class="pull-left" style="width:35px; line-height:1;">
+              <div style="height:9px; margin:5px 0;">5 <span class="glyphicon glyphicon-star"></span></div>
+            </div>
+            <div class="pull-left" style="width:180px;">
+              <div class="progress" style="height:9px; margin:8px 0;">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="5" aria-valuemin="0"
+                  aria-valuemax="5" style="width: 1000%">
+                  <span class="sr-only">80% Complete (danger)</span>
                 </div>
               </div>
             </div>
+            <div class="pull-right" style="margin-left:10px;">1</div>
           </div>
-          
-          </div> <!-- /container -->
+          <div class="pull-left">
+            <div class="pull-left" style="width:35px; line-height:1;">
+              <div style="height:9px; margin:5px 0;">4 <span class="glyphicon glyphicon-star"></span></div>
+            </div>
+            <div class="pull-left" style="width:180px;">
+              <div class="progress" style="height:9px; margin:8px 0;">
+                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="4" aria-valuemin="0"
+                  aria-valuemax="5" style="width: 80%">
+                  <span class="sr-only">80% Complete (danger)</span>
+                </div>
+              </div>
+            </div>
+            <div class="pull-right" style="margin-left:10px;">1</div>
+          </div>
+          <div class="pull-left">
+            <div class="pull-left" style="width:35px; line-height:1;">
+              <div style="height:9px; margin:5px 0;">3 <span class="glyphicon glyphicon-star"></span></div>
+            </div>
+            <div class="pull-left" style="width:180px;">
+              <div class="progress" style="height:9px; margin:8px 0;">
+                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="3" aria-valuemin="0"
+                  aria-valuemax="5" style="width: 60%">
+                  <span class="sr-only">80% Complete (danger)</span>
+                </div>
+              </div>
+            </div>
+            <div class="pull-right" style="margin-left:10px;">0</div>
+          </div>
+          <div class="pull-left">
+            <div class="pull-left" style="width:35px; line-height:1;">
+              <div style="height:9px; margin:5px 0;">2 <span class="glyphicon glyphicon-star"></span></div>
+            </div>
+            <div class="pull-left" style="width:180px;">
+              <div class="progress" style="height:9px; margin:8px 0;">
+                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="2" aria-valuemin="0"
+                  aria-valuemax="5" style="width: 40%">
+                  <span class="sr-only">80% Complete (danger)</span>
+                </div>
+              </div>
+            </div>
+            <div class="pull-right" style="margin-left:10px;">0</div>
+          </div>
+          <div class="pull-left">
+            <div class="pull-left" style="width:35px; line-height:1;">
+              <div style="height:9px; margin:5px 0;">1 <span class="glyphicon glyphicon-star"></span></div>
+            </div>
+            <div class="pull-left" style="width:180px;">
+              <div class="progress" style="height:9px; margin:8px 0;">
+                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="1" aria-valuemin="0"
+                  aria-valuemax="5" style="width: 20%">
+                  <span class="sr-only">80% Complete (danger)</span>
+                </div>
+              </div>
+            </div>
+            <div class="pull-right" style="margin-left:10px;">0</div>
+
+          </div>
+
+        </div>
+
+      </div>
+      <div class="row">
+        <input type="Text" placeholder="Đánh giá..." style="width: 100%; height:100px; border-color: #005FA3;">
+      </div>
+      <div class="note" style="justify-content: center; align-items: center; display: flex;">
+        <span>Note: <span style="color: green">&#9745;</span> - đã mua, là khách hàng.</span> <br>
+        <span><span style="color: red">&#9888;</span> - chưa mua, là khách hàng giả.</span>
       </div>
 
-      <div class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="footer-col-1">
-              <h3>Tải ứng dụng</h3>
-              <p>Tải ứng dụng cho Android và iOS</p>
-              <div class="app-logo">
-                <img src="./images/footer-google-app.png" alt="">
-                <img src="./images/footer-store-app.png" alt="">
+      <div class="row">
+        <div class="col-sm-7">
+          <hr />
+          <div class="review-block">
+            <div class="row">
+              <div class="col-sm-3">
+                <img src="./images/us1.jpeg" class="img-rounded">
+                <span style="color: green">&#9745;</span>
+                <div class="review-block-name"><a href="#">Nguyen Van A</a></div>
+                <div class="review-block-date">July 09, 2021<br />1 day ago</div>
+              </div>
+              <div class="col-sm-9">
+                <div class="review-block-rate">
+                  <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  </button>
+                </div>
+                <div class="review-block-title">Sản phẩm này rất tốt</div>
+                <div class="review-block-description">Tôi đã mua sản phẩm này nhiều lần rồi, tôi thấy nó rất tốt, tôi sẽ
+                  ghé lại để tiếp tục mua sản phẩm này và những sản phẩm khác nữa. Cảm ơn.</div>
               </div>
             </div>
-            <div class="footer-col-2">
-              <h3>Dịch vụ, hỗ trợ</h3>
-              <ul>
-              <li class="footer-info" >Hướng dẫn mua hàng</li>
-              <li class="footer-info" >Hướng dẫn thanh toán</li>
-              <li class="footer-info" >Tin tức công nghệ</li>
-              <li class="footer-info" >Chính sách bảo hành</li>
-              </ul>
+            <hr />
+            <div class="row">
+              <div class="col-sm-3">
+                <img src="./images/us.png" class="img-rounded">
+                <span style="color: green">&#9745;</span>
+                <div class="review-block-name"><a href="#">Nguyen Thi B</a></div>
+                <div class="review-block-date">July 09, 2021<br />1 day ago</div>
+              </div>
+              <div class="col-sm-9">
+                <div class="review-block-rate">
+                  <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-default btn-grey btn-xs" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  </button>
+                </div>
+                <div class="review-block-title">Sản phẩm này rất tốt</div>
+                <div class="review-block-description">Tôi đã mua sản phẩm này nhiều lần rồi, tôi thấy nó rất tốt, tôi sẽ
+                  ghé lại để tiếp tục mua sản phẩm này và những sản phẩm khác nữa. Cảm ơn.</div>
+              </div>
             </div>
-            <div class="footer-col-3">
-              <h3>Chính sách</h3>
-              <ul>
-                <li class="footer-info" >Chính sách bảo hành</li>
-                <li class="footer-info" >Chính sách giao hàng</li>
-                <li class="footer-info" >Chính sách đổi trả hàng</li>
-                <li class="footer-info" >Chính sách bảo mật</li>
-              </ul>
+            <hr />
+            <div class="row">
+              <div class="col-sm-3">
+                <img src="http://dummyimage.com/60x60/666/ffffff&text=No+Image" class="img-rounded" style="">
+                <span style="color:red;">&#9888;</span>
+                <div class="review-block-name"><a href="#">Anonymous</a></div>
+                <div class="review-block-date">July 04, 2021<br />5 day ago</div>
+              </div>
+              <div class="col-sm-9">
+                <div class="review-block-rate">
+                  <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-default btn-grey btn-xs" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-default btn-grey btn-xs" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-default btn-grey btn-xs" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-default btn-grey btn-xs" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  </button>
+                </div>
+                <div class="review-block-title">Đồ dỏm, sản phậm tệ, xấu, đừng mua shop này</div>
+                <div class="review-block-description">ôi vừa mua sản phẩm đã bị hư, tôi sẽ không mua lần sau</div>
+              </div>
             </div>
-            <div class="footer-col-4">
-              <h3>Thông tin</h3>
-              <ul>
-                <li class="footer-info" >Facebook</li>
-                <li class="footer-info" >Twitter</li>
-                <li class="footer-info" >Instagram</li>
-                <li class="footer-info" >Youtube</li>
-              </ul>
+            <div class="row">
+              <div class="col-sm-3">
+                <img src="http://dummyimage.com/60x60/666/ffffff&text=No+Image" class="img-rounded" style="">
+                <span style="color:red;">&#9888;</span>
+                <div class="review-block-name"><a href="#">Anonymous</a></div>
+                <div class="review-block-date">July 04, 2021<br />5 day ago</div>
+              </div>
+              <div class="col-sm-9">
+                <div class="review-block-rate">
+                  <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-default btn-grey btn-xs" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-default btn-grey btn-xs" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-default btn-grey btn-xs" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-default btn-grey btn-xs" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  </button>
+                </div>
+                <div class="review-block-title">Sản phẩm xấu tệ, đừng mua</div>
+                <div class="review-block-description">Tôi vừa mua sản phẩm đã bị hư, tôi sẽ không mua lần sau.</div>
+              </div>
             </div>
           </div>
-          <hr>
-          <p class="copyright">Copyright 2021 - Ngoc Son</p>
         </div>
       </div>
-     
-      <button class="button_scroll2top"><i class="fas fa-arrow-up"></i  class="footer-info"></button>
-        <button class="button_chat" onclick="openForm()"><i class="fab fa-facebook-messenger"></i></button>
-        <div class="chat-popup" id="myForm">
-          <form action="/action_page.php" class="form-container">
-            <h3>Tư vấn cho bạn</h3>
-        
-            <label for="msg"><b>Message</b></label>
-            <textarea placeholder="Type message.." name="msg" required></textarea>
-        
-            <button type="submit" class="btn">Send</button>
-            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-          </form>
+
+    </div> <!-- /container -->
+  </div>
+
+  <div class="small-container">
+    <div class="row row-2">
+      <h2>Related Products</h2>
+      <p>View more</p>
+    </div>
+  </div>
+  <!-- featured products -->
+  <div class="small-container">
+    <div class="row">
+      <div class="col-4">
+        <a href="products-detail.html" style="text-decoration: none;">
+          <img src="./images/ventus.jpg" alt="">
+          <h4>Ventus M</h4>
+          <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </div>
+          <p>10.200.000 VNĐ</p>
+        </a>
+      </div>
+
+      <div class="col-4">
+        <a href="products-detail.html" style="text-decoration: none;">
+          <img src="./images/t10.jpg" alt="">
+          <h4>Titan 10 M</h4>
+          <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </div>
+          <p>12.590.000 VNĐ</p>
+        </a>
+      </div>
+
+      <div class="col-4">
+        <a href="products-detail.html" style="text-decoration: none;">
+          <img src="./images/mys.jpg" alt="">
+          <h4>Mystic M</h4>
+          <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </div>
+          <p>13.300.000</p>
+        </a>
+      </div>
+
+      <div class="col-4">
+        <a href="products-detail.html" style="text-decoration: none;">
+          <img src="./images/ivy.jpg" alt="">
+          <h4>Mystic M</h4>
+          <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </div>
+          <p>15.800.000 VNĐ</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Tải ứng dụng</h3>
+          <p>Tải ứng dụng cho Android và iOS</p>
+          <div class="app-logo">
+            <img src="./images/footer-google-app.png" alt="">
+            <img src="./images/footer-store-app.png" alt="">
+          </div>
         </div>
-      <script type="text/javascript">
-       const button_scroll2top = document.querySelector(".button_scroll2top");
-        button_scroll2top.addEventListener("click", function() {
-            // window.scrollTo(0,0);
-            window.scrollTo( {
-                top:0,
-                left:0,
-                behavior:"smooth"
-            }
-            )
-            $("html,body").animate({ scrollTop: 0}, "slow");
-        });
-      </script>
-      <!-- toggle menu JS -->
-      <script>
-        var MenuItems = document.getElementById("MenuItems");
+        <div class="footer-col-2">
+          <h3>Dịch vụ, hỗ trợ</h3>
+          <ul>
+            <li class="footer-info">Hướng dẫn mua hàng</li>
+            <li class="footer-info">Hướng dẫn thanh toán</li>
+            <li class="footer-info">Tin tức công nghệ</li>
+            <li class="footer-info">Chính sách bảo hành</li>
+          </ul>
+        </div>
+        <div class="footer-col-3">
+          <h3>Chính sách</h3>
+          <ul>
+            <li class="footer-info">Chính sách bảo hành</li>
+            <li class="footer-info">Chính sách giao hàng</li>
+            <li class="footer-info">Chính sách đổi trả hàng</li>
+            <li class="footer-info">Chính sách bảo mật</li>
+          </ul>
+        </div>
+        <div class="footer-col-4">
+          <h3>Thông tin</h3>
+          <ul>
+            <li class="footer-info">Facebook</li>
+            <li class="footer-info">Twitter</li>
+            <li class="footer-info">Instagram</li>
+            <li class="footer-info">Youtube</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p class="copyright">Copyright 2021 - Ngoc Son</p>
+    </div>
+  </div>
+
+  <button class="button_scroll2top"><i class="fas fa-arrow-up"></i class="footer-info"></button>
+  <button class="button_chat" onclick="openForm()"><i class="fab fa-facebook-messenger"></i></button>
+  <div class="chat-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+      <h3>Tư vấn cho bạn</h3>
+
+      <label for="msg"><b>Message</b></label>
+      <textarea placeholder="Type message.." name="msg" required></textarea>
+
+      <button type="submit" class="btn">Send</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+  <script type="text/javascript">
+    const button_scroll2top = document.querySelector(".button_scroll2top");
+    button_scroll2top.addEventListener("click", function () {
+      // window.scrollTo(0,0);
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+      }
+      )
+      $("html,body").animate({ scrollTop: 0 }, "slow");
+    });
+  </script>
+  <!-- toggle menu JS -->
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoogle() {
+      if (MenuItems.style.maxHeight == "0px") {
+        MenuItems.style.maxHeight = "200px";
+      }
+      else {
         MenuItems.style.maxHeight = "0px";
-        function menutoogle() {
-          if(MenuItems.style.maxHeight == "0px") 
-          {
-            MenuItems.style.maxHeight = "200px";
-          }
-          else {
-            MenuItems.style.maxHeight = "0px";
-          }
-        }
-        var productImg = document.getElementById("ProductImg");
-          var SmallImg = document.getElementsByClassName("small-img");
-          SmallImg[0].onclick = function() {
-              productImg.src = SmallImg[0].src;
-          }
-          SmallImg[1].onclick = function() {
-              productImg.src = SmallImg[1].src;
-          }
-          SmallImg[2].onclick = function() {
-              productImg.src = SmallImg[2].src;
-          }
-          SmallImg[3].onclick = function() {
-              productImg.src = SmallImg[3].src;
-          }
+      }
+    }
+    var productImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+    SmallImg[0].onclick = function () {
+      productImg.src = SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function () {
+      productImg.src = SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function () {
+      productImg.src = SmallImg[2].src;
+    }
+    SmallImg[3].onclick = function () {
+      productImg.src = SmallImg[3].src;
+    }
 
-                 //popup chat
-        function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
+    //popup chat
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
 
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-} 
-      </script>
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+  </script>
 </body>
+
 </html>
