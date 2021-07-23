@@ -63,7 +63,7 @@
                                 <p>Acer Nitro 5</p>
                                 <small>Price: 21.900.000 VNĐ</small>
                                 <br>
-                                <a class="remove" href="">Remove</a>
+                                <a class="remove" onclick="remove()"  href="">Remove</a>
                             </div>
                         </div>
                 </td>
@@ -79,7 +79,7 @@
                                 <p>Coin 3</p>
                                 <small>Price: 12.600.000 VNĐ</small>
                                 <br>
-                                <a class="remove" href="">Remove</a>
+                                <a class="remove" onclick="remove()"  href="">Remove</a>
                             </div>
                         </div>
                 </td>
@@ -95,7 +95,7 @@
                                 <p>Bàn phím cơ Gaming DAREU EK87 - Black (Multi-LED)</p>
                                 <small>Price: 499.000 VNĐ</small>
                                 <br>
-                                <a  class="remove" href="">Remove</a>
+                                <a  class="remove" onclick="remove()" href="">Remove</a>
                             </div>
                         </div>
                 </td>
@@ -222,6 +222,12 @@ function closeForm() {
   document.getElementById("myForm").style.display = "none";
 } 
         
+
       </script>
+     <script>
+        function remove() {
+          confirm("Bạn có muốn xoá sản phẩm?");
+        }
+        </script>
 </body>
 </html>
