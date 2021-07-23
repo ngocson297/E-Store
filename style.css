@@ -736,8 +736,10 @@ th:last-child {
     .single-product h1 {
         font-size: 26px;
         line-height: 32px;
+    }   
+    .navbar {
+        z-index: 10;
     }
-
     .cart-info p {
         display:none;
     }
